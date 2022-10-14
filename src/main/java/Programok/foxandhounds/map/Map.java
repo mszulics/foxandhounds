@@ -19,10 +19,10 @@ public class Map {
         tomb[7][0] = 1;
 
         //Kiiratas
-        for (int i = 0; i < tomb.length; i++) {
+        for (int[] ints : tomb) {
             System.out.println();
             for (int j = 0; j < tomb.length; j++) {
-                System.out.print(tomb[i][j] + " ");
+                System.out.print(ints[j] + " ");
             }
         }
     }
