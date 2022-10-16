@@ -3,17 +3,24 @@ package Programok.foxandhounds.input;
 import java.util.Scanner;
 
 public class UserInput {
-    public static void main(String[] args) {
-        String jatekosNev;
-        String input;
+    Scanner sc = new Scanner(System.in);
 
-        Scanner sc = new Scanner(System.in);
+    public String getInput() {
+        return input;
+    }
 
+    public UserInput(){
+        jatekosNev = null;
+        input = null;
+    }
+
+    private String jatekosNev, input;
+
+
+    public void begin(){
         System.out.print("Add meg a neved! Név: ");
         jatekosNev = sc.nextLine();
-        System.out.println("Szia "+jatekosNev+", Szeretnéd elindítani a játékot? [I/N]");
+        System.out.println("Szia "+jatekosNev+", írj Igen-t a játék elindításához!");
         input = sc.nextLine();
-
-
     }
 }
